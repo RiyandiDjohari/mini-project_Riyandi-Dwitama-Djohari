@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  height: 500px;
+  background-color: #e2e2e2;
+}
+.jumbotron {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.jumbotronLeft {
+  flex: 7;
+  text-align: start;
+  font-family: "Lora", serif;
+}
+.jumbotronLeft h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 20px 0;
+  font-family: "Lora", sans-serif;
+}
+.jumbotronLeft p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.jumbotronLeft .btn {
+  margin: 10px 0;
+  font-size: 26px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotronRight {
+  flex: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bannerIcon {
+  transform: scale(0.9);
+}
+
+.contentTitle {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 20px 0;
+  font-family: "Lora", serif;
+  text-align: start;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  column-gap: 120px;
+}
+
+@media screen and (max-width: 1450px) {
+  .jumbotronLeft h2 {
+    font-size: 2.5rem;
+  }
+  .contentTitle{
+    font-size: 2.5rem;
+  }
+  .jumbotronLeft p {
+    font-size: 1.2rem;
+  }
+  .jumbotronLeft .btn {
+    font-size: 22px;
+  }
+  .jumbotronRight img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1020px){
+  .container{
+    height: 420px;
+  }
+  .contentTitle{
+    font-size: 2rem;
+  }
+  .jumbotronLeft h2 {
+    font-size: 2rem;
+  }
+  .jumbotronLeft p {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  .jumbotronLeft .btn {
+    font-size: 18px;
+  }
+  .jumbotronRight img {
+    width: 350px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .container{
+    height: 380px;
+  }
+  .contentTitle{
+    font-size: 2rem;
+  }
+  .jumbotronLeft h2 {
+    font-size: 2rem;
+  }
+  .jumbotronLeft p {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+  .jumbotronLeft .btn {
+    font-size: 18px;
+  }
+  .jumbotronRight{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .container{
+    height: 320px;
+  }
+  .contentTitle{
+    font-size: 1.8rem;
+  }
+  .jumbotronLeft h2 {
+    font-size: 1.8rem;
+  }
+  .jumbotronLeft p {
+    font-size: .8rem;
+  }
+  .jumbotronLeft .btn {
+    font-size: 14px;
+  }
+
+}
+
+

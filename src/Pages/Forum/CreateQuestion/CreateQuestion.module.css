@@ -1,0 +1,40 @@
+.contain h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  column-gap: 15px;
+}
+
+.btnWrapper button {
+  font-size: 24px;
+}
+
+.spinner {
+  color: #333533;
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h2{
+    font-size: 32px;
+  }
+  .btnWrapper button {
+    font-size: 22px;
+  }
+}
+
+@media screen and ( max-width: 576px ) {
+  .contain h2{
+    font-size: 28px;
+  }
+  .btnWrapper button {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,180 @@
+.nav {
+  background-color: #333533;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  box-shadow: 0px 10px 20px 0px #00000040;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.top {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.topRight {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.topLeft {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.topCenter {
+  flex: 8;
+  height: 100%;
+}
+
+.topLeft .topTitle {
+  font-size: 2rem;
+  color: #f5cb5c;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+
+.list li {
+  padding: 1rem 2rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.list a:hover {
+  color: white;
+}
+.list .active {
+  color: #f5cb5c;
+}
+
+.mobileMenuIcon{
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .list li {
+    padding: 1rem 1.5rem;
+  }
+  .list a {
+    font-size: 16px;
+  }
+  .topLeft .topTitle {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list li {
+    padding: 1rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topTitle{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+
+  .list{
+    display: none;
+  }
+  .topRight{
+    display: none;
+  }
+
+  .listMobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #474a47;
+    left: 0;
+    top: 103px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .listMobileUserHeader{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #474a47;
+    left: 0;
+    top: 60px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .listMobile li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .listMobile li a:hover{
+    color: #fff;
+  }
+  .listMobile .active{
+    color: #f5cb5c;
+  }
+
+  .topCenter ul li{
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .mobileMenuIcon{
+    display: block;
+    color: white;
+    background-color: #333533;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+  }
+
+  .mobileMenuIcon svg{
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+  }
+}

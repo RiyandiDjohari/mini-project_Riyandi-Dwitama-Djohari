@@ -1,0 +1,203 @@
+.containCenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.containTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  /* background-color: black; */
+}
+
+.topLeft{
+  flex: 8;
+}
+.topLeft h2 {
+  font-size: 32px;
+}
+
+.topLeft p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.topRight{
+  display: flex;
+  justify-content: flex-end;
+  flex: 4;
+}
+
+.topRight .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+  font-size: 20px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.btn:hover {
+  background-color: #ebe8e8;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pgr {
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  background-color: white;
+  color: #333533;
+  border: 1px solid #333533;
+  display: flex;
+  padding: 10px;
+  margin-right: 5px;
+  box-shadow: 2px 2px 4px 0px #00000040;
+  border-radius: 5px;
+}
+
+.input input {
+  background: none;
+  width: 100px;
+  color: #333533;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 3px;
+}
+
+.input input::placeholder {
+  color: #333533;
+  font-size: 20px;
+}
+
+.searchBtn {
+  padding: 10px;
+  color: #333533;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0px #00000040;
+  border: 1px solid #333533;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+
+.searchBtn:hover {
+  background-color: #ebe8e8;
+}
+
+.resetBtn {
+  border: none;
+  outline: none;
+  background: red;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.search p {
+  font-size: 22px;
+  margin: 0;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 20px 0;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.noQuestion {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 4rem;
+}
+
+.showAllBtn {
+  width: fit-content;
+  margin-top: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+@media screen and ( max-width: 992px ) {
+  .topLeft h2 {
+    font-size: 28px;
+  }
+  .topLeft p {
+    font-size: 16px;
+  }
+  .topRight .btn{
+    font-size: 18px;
+  }
+  .search p {
+    font-size: 20px;
+  }
+  .input input{
+    font-size: 16px;
+  }
+  .searchBtn{
+    font-size: 16px;
+  }
+  .input input::placeholder {
+    font-size: 18px;
+  }
+}
+@media screen and ( max-width: 670px ) {
+  .containCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    row-gap: 10px;
+  }
+  .topLeft h2 {
+    text-align: center;
+  }
+  .topLeft p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .topRight .btn{
+    font-size: 16px;
+  }
+  .search p {
+    font-size: 18px;
+  }
+  .input input{
+    font-size: 14px;
+  }
+  .searchBtn{
+    font-size: 16px;
+  }
+}
+
+@media screen and ( max-width: 525px) {
+  .search p {
+    display: none;
+  }
+}

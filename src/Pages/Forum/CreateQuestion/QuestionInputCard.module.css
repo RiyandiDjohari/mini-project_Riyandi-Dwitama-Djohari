@@ -1,0 +1,33 @@
+.contain {
+  margin-top: 22px;
+}
+
+.contain h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.contain p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h3{
+    font-size: 28px;
+  }
+  .contain p{
+    font-size: 16px;
+  }
+}
+
+@media screen and ( max-width: 576px ) {
+  .contain h3{
+    font-size: 24px;
+  }
+  .contain p{
+    font-size: 14px;
+  }
+}

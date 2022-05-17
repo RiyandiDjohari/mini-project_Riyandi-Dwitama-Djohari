@@ -1,0 +1,21 @@
+.contain {
+  margin-top: 22px;
+}
+
+.contain h3 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h3{
+    font-size: 28px;
+  }
+}
+
+@media screen and ( max-width: 576px ) {
+  .contain h3{
+    font-size: 24px;
+  }
+}

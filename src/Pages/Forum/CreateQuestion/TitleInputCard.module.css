@@ -1,0 +1,48 @@
+.contain {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.contain h3 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.contain p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contain textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 5px 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h3{
+    font-size: 28px;
+  }
+  .contain p{
+    font-size: 16px;
+  }
+  .contain textarea{
+    min-height: 60px;
+  }
+}
+@media screen and ( max-width: 576px ) {
+  .contain h3{
+    font-size: 24px;
+  }
+  .contain p{
+    font-size: 14px;
+  }
+  .contain textarea{
+    min-height: 50px;
+  }
+}

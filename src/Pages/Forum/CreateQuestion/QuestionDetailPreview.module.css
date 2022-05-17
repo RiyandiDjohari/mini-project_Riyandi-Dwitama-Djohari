@@ -1,0 +1,25 @@
+.contain {
+  margin-top: 20px;
+}
+.contain h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.previewContain {
+  min-height: 180px;
+  /* margin-bottom: 20px; */
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h3{
+    font-size: 28px;
+  }
+}
+
+@media screen and ( max-width: 576px ) {
+  .contain h3{
+    font-size: 24px;
+  }
+}

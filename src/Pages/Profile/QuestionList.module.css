@@ -1,0 +1,34 @@
+.questionsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+  margin: 20px 0;
+}
+
+.questionsWrapper p {
+  margin: 0px;
+}
+
+.contain{
+  margin: 20px 0;
+}
+.contain h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.noQuestion p{
+  margin-bottom: 10px;
+}
+
+.btn{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .contain h2{
+    font-size: 28px;
+  }
+}

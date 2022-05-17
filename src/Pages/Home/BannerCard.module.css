@@ -1,0 +1,59 @@
+.bannerCard {
+  background-color: white;
+  color: #333533;
+  padding: 20px 40px;
+  box-shadow: 4px 4px 5px 0px #00000033 inset;
+  border-radius: 10px;
+  border: 1px solid #333533;
+  margin: 20px 0;
+}
+
+.bannerCard h3 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1.5px solid #333533;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.bannerCard p {
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  text-align: left;
+  text-align: justify;
+}
+
+.btn {
+  font-size: 20px;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media  screen and (max-width: 1250px) {
+  .bannerCard h3{
+    font-size: 28px;
+  }
+  .bannerCard p{
+    font-size: 18px;
+  }
+  .btn{
+    font-size: 18px;
+  }
+}
+
+@media  screen and (max-width: 576px) {
+  .bannerCard h3{
+    font-size: 24px;
+  }
+  .bannerCard p{
+    font-size: 14px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+}

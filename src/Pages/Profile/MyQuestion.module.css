@@ -1,0 +1,82 @@
+.contain {
+  padding: 0px;
+}
+
+.contain h3 {
+  color: #333533;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #333533;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  color: #f5cb5c;
+  border-bottom: 1px solid #f5cb5c;
+}
+
+.btnWrapper {
+  display: flex;
+  column-gap: 10px;
+}
+
+.btnWrapper button {
+  font-size: 20px;
+  padding: 0.3rem 1rem;
+}
+
+.actionWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actionWrapper button{
+  font-size: 20px;
+  padding: 0.3rem 1rem;
+}
+
+@media screen and ( max-width: 1200px){
+  .contain h3{
+    font-size: 26px;
+  }
+  .btnWrapper button {
+    font-size: 18px;
+    padding: 0.3rem 1rem;
+  }
+  .actionWrapper button{
+    font-size: 18px;
+    padding: 0.3rem 1rem;
+  }
+}
+@media screen and ( max-width: 992px){
+  .contain h3{
+    font-size: 24px;
+  }
+  .btnWrapper button {
+    font-size: 16px;
+    padding: 0.3rem 1rem;
+  }
+  .actionWrapper button{
+    font-size: 16px;
+    padding: 0.3rem 1rem;
+  }
+}
+@media screen and ( max-width: 576px){
+  .contain h3{
+    font-size: 22px;
+  }
+  .btnWrapper button {
+    font-size: 14px;
+    padding: 0.3rem 1rem;
+  }
+  .actionWrapper button{
+    font-size: 14px;
+    padding: 0.3rem 1rem;
+  }
+}

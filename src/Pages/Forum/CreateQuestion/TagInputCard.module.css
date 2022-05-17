@@ -1,0 +1,68 @@
+.contain {
+  margin-top: 25px;
+}
+
+.contain h3 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.contain p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.inputWrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.inputWrapper input {
+  border-radius: 4px;
+  font-size: 22px;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #333533;
+}
+
+.inputWrapper button {
+  font-size: 22px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+}
+
+@media screen and ( max-width: 992px ) {
+  .contain h3{
+    font-size: 28px;
+  }
+  .contain p{
+    font-size: 16px;
+  }
+  .inputWrapper input{
+    font-size: 20px;
+  }
+  .inputWrapper button{
+    font-size: 20px;
+  }
+}
+@media screen and ( max-width: 576px ) {
+  .contain h3{
+    font-size: 24px;
+  }
+  .contain p{
+    font-size: 14px;
+  }
+  .inputWrapper {
+    column-gap: 15px;
+  }
+  .inputWrapper input{
+    font-size: 18px;
+  }
+  .inputWrapper button{
+    font-size: 18px;
+  }
+}
