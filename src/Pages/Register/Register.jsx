@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { login } from "../../Store/userSlice";
 import { useInsertNewUser } from "../../Hooks/useInsertNewUser";
-import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 // Components
 import Button from "../../Components/Button/Button";
@@ -25,13 +24,13 @@ function Register() {
   const isLoading = loadingAuth || loadingInsertUser;
   const isError = errorInsertUser || errorAuth;
   const dispatch = useDispatch();
-  const history = useHistory();
 
   const registerHandler = (e) => {
     e.preventDefault();
     setLoadingAuth(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((authUser) => {
+        console.log(auth)
         updateProfile(auth.currentUser, {
           displayName: username,
         }).then(() => {
@@ -52,14 +51,13 @@ function Register() {
             })
           );
           setLoadingAuth(false);
-          history.push("/");
         });
       })
       .catch((err) => {
         setLoadingAuth(false);
         setErrorAuth(err);
       });
-  };
+    };
   
   return (
     <Container>

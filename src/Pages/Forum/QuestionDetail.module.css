@@ -1,3 +1,8 @@
+.contain h2{
+  font-family: "Lora", serif;
+  margin-bottom: 20px;
+}
+
 .questionContain h2,
 .answerContain h2,
 .editorContain h2,

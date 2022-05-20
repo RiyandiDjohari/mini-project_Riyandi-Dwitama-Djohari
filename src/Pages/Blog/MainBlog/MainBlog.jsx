@@ -36,7 +36,7 @@ function MainBlog() {
             </Button>
           </div>
         </div>
-        <BlogsContainer data={data} error={error} loading={loading} />
+        <BlogsContainer data={data} error={error} loading={loading} del={false} />
       </Container>
     </>
   );

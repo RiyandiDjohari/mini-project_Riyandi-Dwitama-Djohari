@@ -1,18 +1,19 @@
 import classes from "./MainForum.module.css";
 import React, { useState } from 'react';
-import { useQuery } from '@apollo/client';
+// import { useQuery } from '@apollo/client';
 import { BorderAllOutlined, Help, Search } from '@mui/icons-material';
 import { useHistory } from 'react-router-dom';
-import { GetAllQuestion } from '../../GraphQL/query';
+// import { GetAllQuestion } from '../../GraphQL/query';
 import { useGetQuestionByTag } from "../../Hooks/useGetQuestionByTag";
 import QuestionCard from './QuestionCard';
 import Button from '../../Components/Button/Button';
 import Container from '../../Components/Container/Container';
 import Card from '../../Components/Card/Card';
 import LoadingQuestionCard from "../../Components/Loading/LoadingQuestionCard"
+import { useSubscribeQuestion } from "../../Hooks/useSubscribeQuestions";
 
 function MainForum() {
-  const {data, loading, error} = useQuery(GetAllQuestion);
+  const {data, loading, error} = useSubscribeQuestion();
   const { getQuestionByTag, questionByTag, errorQuestionByTag, loadingQuestionByTag } = useGetQuestionByTag()
   const [tag, setTag] = useState("");
   const [mode, setMode] = useState("all");

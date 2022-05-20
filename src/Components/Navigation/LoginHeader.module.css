@@ -12,5 +12,26 @@
 @media screen and (max-width: 1400px) {
   .btn {
     font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .loginHeaderWrapper{
+    text-align: center;
+    padding: 20px;
+  }
+  .btn{
+    background-color: #444;
+    color: #FFF;
+  }
+  .btn:first-child {
+    margin-right: 0px;
+  }
+  .btn:last-child {
+    margin-left: 20px;
+  }
+  .btn:hover{
+    color: #F5CB5C;
   }
 }

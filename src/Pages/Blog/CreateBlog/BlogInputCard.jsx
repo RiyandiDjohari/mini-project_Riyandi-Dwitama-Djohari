@@ -10,7 +10,6 @@ function BlogInputCard({state, onChange}) {
         <h3>Type your blog</h3>
         <p>Add some detail for your blog that describe what’s in your mind.</p>
       </Card>
-      <p></p>
       <TextEditor editorState={state} onChange={onChange} />
     </>
   )

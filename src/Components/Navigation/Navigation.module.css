@@ -49,6 +49,8 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  /* font-family: "Lora", serif; */
 }
 
 .scroll {
@@ -63,6 +65,8 @@
   justify-content: center;
   list-style-type: none;
   align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .list li {
@@ -71,16 +75,19 @@
 
 .list a {
   text-decoration: none;
-  color: white;
+  color: #FFF;
   font-size: 20px;
   font-weight: 300;
   cursor: pointer;
+  /* font-family: "Lora", serif; */
 }
+
 .list a:hover {
-  color: white;
+  color: #FFF;
 }
+
 .list .active {
-  color: #f5cb5c;
+  color: #F5CB5C;
 }
 
 .mobileMenuIcon{
@@ -96,6 +103,18 @@
   .topLeft .topTitle {
     font-size: 1.6rem;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 1790px) {
+  .topLeft{
+    flex: 4;
+  }
+  .topCenter{
+    flex: 4;
+  }
+  .topRight{
+    flex: 4;
   }
 }
 
@@ -116,6 +135,7 @@
   .list{
     display: none;
   }
+
   .topRight{
     display: none;
   }
@@ -124,17 +144,19 @@
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #474a47;
+    background-color: #444444;
     left: 0;
-    top: 103px;
+    top: 140px;
     transition: all 0.5s ease-out;
     width: 100%;
+    padding-left: 0;
   }
+
   .listMobileUserHeader{
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #474a47;
+    background-color: #444444;
     left: 0;
     top: 60px;
     transition: all 0.5s ease-out;
@@ -143,20 +165,22 @@
 
   .listMobile li a{
     text-decoration: none;
-    color: white;
+    color: #FFF;
     font-size: 20px;
     font-weight: 300;
     cursor: pointer;
   }
+
   .listMobile li a:hover{
-    color: #fff;
+    color: #FFF;
   }
+
   .listMobile .active{
     color: #f5cb5c;
   }
 
   .topCenter ul li{
-    color: #fff;
+    color: #FFF;
     text-align: center;
     padding: 32px;
     width: 100%;
@@ -165,7 +189,7 @@
 
   .mobileMenuIcon{
     display: block;
-    color: white;
+    color: #FFF;
     background-color: #333533;
     border: none;
     outline: none;

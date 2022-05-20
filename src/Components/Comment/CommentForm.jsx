@@ -3,7 +3,7 @@ import { CircularProgress } from '@mui/material';
 import Button from '../Button/Button';
 import classes from "./CommentForm.module.css";
 
-function CommentForm({ onCancel, onSubmit, error, loading }) {
+function CommentForm({ onSubmit, error, loading }) {
   const commentRef = useRef();
 
   const submitHandler = (e) => {
@@ -12,10 +12,11 @@ function CommentForm({ onCancel, onSubmit, error, loading }) {
     commentRef.current.value = "";
   };
 
-  // const cancelHandler = (e) => {
-  //   e.preventDefault();
-  //   commentRef.current.value = "";
-  // }
+  const cancelHandler = (e) => {
+    e.preventDefault();
+    commentRef.current.value = "";
+  }
+  
   return (
     <div className={classes.contain}>
       <form onSubmit={submitHandler}>
@@ -31,7 +32,7 @@ function CommentForm({ onCancel, onSubmit, error, loading }) {
         )}
         {!loading && (
           <div className={classes.btnWrapper}>
-            <Button onClick={onCancel} theme="light">
+            <Button onClick={cancelHandler} theme="light">
               Cancel
             </Button>
             <Button theme="dark">Submit</Button>

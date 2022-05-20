@@ -28,10 +28,31 @@ function CreateQuestion() {
   const [title, setTitle] = useState("");
   const [tags, setTags] = useState([]);
   const [submitted, setSubmitted] = useState(false);
-  const { createQuestion, loadingCreateQuestion, errorCreateQuestion } = useCreateQuestion(uid);
+  const { createQuestion, loadingCreateQuestion, errorCreateQuestion } = useCreateQuestion();
 
   const [ questionEditorState, setQuestionEditorState ] = useState(EditorState.createEmpty());
   const [codeEditorState, setCodeEditorState] = useState(EditorState.createEmpty());
+
+  const submitHandler = () => {
+    const questionObject = {
+      user_id: uid,
+      username: username,
+      title: title,
+      question: draftjsToMd(convertToRaw(questionEditorState.getCurrentContent())),
+      code: draftjsToMd(convertToRaw(codeEditorState.getCurrentContent())),
+      timestamp: date.format(new Date(), "MM-DD-YYYY"),
+      tags: {
+        data: tags,
+      },
+    };
+    createQuestion({
+      variables: {
+        object: questionObject,
+      },
+    });
+    resetInput();
+    setSubmitted(true);
+  };
 
   const addTagHandler = (tag) => {
     setTags((prev) => [...prev, { tag }]);
@@ -63,27 +84,6 @@ function CreateQuestion() {
 
   const backHandler = () => {
     history.push('/forum');
-  };
-
-  const submitHandler = () => {
-    const questionObject = {
-      user_id: uid,
-      username: username,
-      title: title,
-      question: draftjsToMd(convertToRaw(questionEditorState.getCurrentContent())),
-      code: draftjsToMd(convertToRaw(codeEditorState.getCurrentContent())),
-      timestamp: date.format(new Date(), "MM-DD-YYYY"),
-      tags: {
-        data: tags,
-      },
-    };
-    createQuestion({
-      variables: {
-        object: questionObject,
-      },
-    });
-    resetInput();
-    setSubmitted(true);
   };
 
   const resetInput = () => {

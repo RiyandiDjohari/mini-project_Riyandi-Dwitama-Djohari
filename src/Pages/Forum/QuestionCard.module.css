@@ -130,3 +130,22 @@
   }
 
 }
+
+@media screen and (max-width: 420px) {
+  .headWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .flexWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .headWrapper .author {
+    text-align: left;
+  }
+  
+}

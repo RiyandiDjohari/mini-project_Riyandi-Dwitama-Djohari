@@ -10,7 +10,6 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
-  /* background-color: black; */
 }
 
 .topLeft{
@@ -18,6 +17,8 @@
 }
 .topLeft h2 {
   font-size: 32px;
+  font-family: "Lora", serif;
+  font-weight: 500;
 }
 
 .topLeft p {

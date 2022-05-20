@@ -6,17 +6,22 @@ import classes from "./Navigation.module.css";
 import UserHeader from "./UserHeader";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { useHistory } from "react-router-dom";
 
 function Navigation() {
+  const history = useHistory();
   const isLogin = useSelector((state) => state.user.isLogin);
   const [isMobile, setIsMobile] = useState(false);
 
+  const handleClickTitle = () => {
+    history.push("/");
+  }
   return (
     <div className={classes.nav}>
       <div className={classes.top}>
 
         <div className={classes.topLeft}>
-          <h4 className={classes.topTitle}>ForumCare</h4>
+          <h4 className={classes.topTitle} onClick={handleClickTitle}>ForumCare</h4>
         </div>
         
         <div className={classes.topCenter}>

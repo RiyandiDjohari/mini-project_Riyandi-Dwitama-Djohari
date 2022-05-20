@@ -6,7 +6,7 @@ function TitleInput({value, onChange}) {
   return (
     <Card className={classes.contain}>
       <h3>Your Title Here (max 35 character)</h3>
-      <input type="text" value={value} onChange={onChange} />
+      <input type="text" value={value} onChange={onChange} required/>
     </Card>
   )
 }

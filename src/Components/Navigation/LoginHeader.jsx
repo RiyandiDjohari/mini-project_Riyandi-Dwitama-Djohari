@@ -6,16 +6,18 @@ import classes from "./LoginHeader.module.css";
 function LoginHeader() {
   return (
     <>
-      <Link to="/login">
-        <Button className={classes.btn} theme="dark">
-          LOGIN
-        </Button>
-      </Link>
-      <Link to="/register">
-        <Button className={classes.btn} theme="light">
-          REGISTER
-        </Button>
-      </Link>
+      <div className={classes.loginHeaderWrapper}>
+        <Link to="/login">
+          <Button className={classes.btn} theme="dark">
+            LOGIN
+          </Button>
+        </Link>
+        <Link to="/register">
+          <Button className={classes.btn} theme="light">
+            REGISTER
+          </Button>
+        </Link>
+      </div>
     </>
   );
 }
