@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 import Container from '../../Components/Container/Container'
 import classes from "./QuestionList.module.css";
-import { useGetUserQuestion } from "../../Hooks/useGetUserQuestion";
 import { useDeleteQuestion } from '../../Hooks/useDeleteQuestion';
 import { Alert } from '@mui/material';
 import CenteredSpinner from '../../Components/Loading/CenteredSpinner';
@@ -12,11 +11,12 @@ import LoadingQuestionDetail from '../../Components/Loading/LoadingQuestionDetai
 import Button from '../../Components/Button/Button';
 import { Help } from '@mui/icons-material';
 import { useHistory } from 'react-router-dom';
+import { useSubscribeUserQuestions } from '../../Hooks/useSubscribeUserQuestions';
 
 function QuestionList() {
   const uid = useSelector((state) => state.user.uid);
-  const { myQuestions, loadingMyQuestions, errorMyQuestions } = useGetUserQuestion(uid);
-  const { deleteQuestion, loadingDeleteQuestion, errorDeleteQuestion } = useDeleteQuestion(uid);
+  const { myQuestions, loadingMyQuestions, errorMyQuestions } = useSubscribeUserQuestions(uid);
+  const { deleteQuestion, loadingDeleteQuestion, errorDeleteQuestion } = useDeleteQuestion();
   const [deleted, setDeleted] = useState(false);
   const history = useHistory();
 

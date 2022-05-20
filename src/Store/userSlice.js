@@ -7,7 +7,6 @@ const userSlice = createSlice({
     username: "",
     uid: "",
     profilePicture: null,
-    // point: 0,
   },
   reducers: {
     login: (state, action) => {
@@ -16,14 +15,12 @@ const userSlice = createSlice({
       state.username = userData.username;
       state.uid = userData.uid;
       state.profilePicture = userData.profilePictureUrl;
-      // state.point = userData.point;
     },
     logout: (state, action) => {
       state.isLogin = false;
       state.username = "";
       state.uid = "";
       state.profilePicture = null;
-      // state.point = 0;
     },
   },
 });

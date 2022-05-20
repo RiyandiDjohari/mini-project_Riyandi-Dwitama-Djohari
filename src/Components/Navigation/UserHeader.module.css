@@ -24,10 +24,11 @@
 
 .displayName {
   margin-right: 3px;
-  font-family: "Josefin Sans", sans-serif;
 }
-.displayName h3 {
+.displayName h4 {
   margin-bottom: 0;
+  color: #333533;
+  /* font-family: "Lora", sans-serif; */
 }
 
 @media screen and ( max-width: 1200px) {

@@ -29,6 +29,7 @@
 }
 .left h2 {
   font-size: 36px;
+  font-family: "Lora", sans-serif;
 }
 .btn {
   display: flex;

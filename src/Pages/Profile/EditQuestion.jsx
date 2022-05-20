@@ -23,14 +23,14 @@ function EditQuestion(props) {
     question: questionProps,
     code: codeProps,
     tags: tagsProps,
-    user_id,
+    // user_id,
   } = props.location.state.data;
 
   const convertedTags = tagsProps.map(({question_id, tag}) => ({
     tag, question_id
   }));
 
-  const { updateQuestion, loadingUpdateQuestion, errorUpdateQuestion } = useUpdateQuestion(user_id);
+  const { updateQuestion, loadingUpdateQuestion, errorUpdateQuestion } = useUpdateQuestion();
   console.log(updateQuestion);
   const [title, setTitle] = useState(titleProps);
   const [submitted, setSubmitted] = useState(false);

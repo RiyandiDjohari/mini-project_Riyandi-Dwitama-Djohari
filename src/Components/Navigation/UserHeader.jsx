@@ -24,7 +24,7 @@ function UserHeader() {
         {!url && <Avatar style={{ backgroundColor: "#333533" }} className={classes.avatar} sx={{width: 35, height: 35}}/> }
         {url && <img src={url} alt="profile-pict" />}
         <div className={classes.displayName}>
-          <h3>{username}</h3>
+          <h4>{username}</h4>
         </div>
         <ArrowDropDownIcon className={classes.dropdown} />
         {showDropDown && <ProfileDropdown />}

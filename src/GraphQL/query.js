@@ -89,21 +89,3 @@ export const GetBlogDetail = gql`
     }
   }
 `;
-
-export const GetUserQuestions = gql`
-  query MyQuery($user_id: String!) {
-    question(where: {user_id: {_eq: $user_id}}) {
-      id
-      question
-      code
-      title
-      user_id
-      username
-      tags {
-        id
-        tag
-        question_id
-      }
-    }
-  }
-`;

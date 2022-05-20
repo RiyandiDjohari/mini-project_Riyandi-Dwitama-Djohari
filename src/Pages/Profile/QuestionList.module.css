@@ -17,10 +17,11 @@
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 10px;
+  font-family: "Lora", serif;
 }
 
 .noQuestion p{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .btn{

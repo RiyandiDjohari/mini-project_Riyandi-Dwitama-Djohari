@@ -9,7 +9,7 @@
 
 .footer h4 {
   font-size: 24px;
-  color: white;
+  color: #FFF;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -17,7 +17,7 @@
 .footer p {
   font-size: 18px;
   margin: 4px 0;
-  color: white;
+  color: #FFF;
   font-weight: 300;
   display: flex;
   align-items: center;

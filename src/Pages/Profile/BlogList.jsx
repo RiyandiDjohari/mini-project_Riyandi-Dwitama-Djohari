@@ -16,7 +16,7 @@ function BlogList() {
 
   return (
     <Container>
-      <h2 className="my-3 fw-normal">Your Blogs</h2>
+      <h2 className="my-3 fw-normal" style={{fontFamily: "Lora"}}>Your Blogs</h2>
       <BlogsContainer del={true} data={data} loading={loading} error={error} />
     </Container>
   )
